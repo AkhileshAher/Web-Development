@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* min-height: 1200px; */
+    
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 45%, rgba(148, 187, 233, 1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 360px;
+    height:550px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+}
+
+.card img{
+    height: 57%;
+    border-radius: 20px;
+}
+
+.card h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card p{
+    font-size: large;
+    font-weight: 500;
+}
