@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background: #d0a3f0;
+  background: linear-gradient(
+    90deg,
+    rgba(208, 163, 240, 1) 10%,
+    rgba(247, 146, 146, 1) 48%,
+    rgba(255, 192, 105, 1) 94%
+  );
+
+  color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  padding: 20px;
+  width: 50%;
+  max-width: 600px;
+  box-shadow: 5px 5px 8px 10px rgb(39, 35, 35);
+}
+
+h1 {
+  font-size: 2rem;
+  color: rgb(133, 69, 12);
+}
+
+.headpart {
+  display: flex;
+  gap: 10px;
+}
+
+.headpart img {
+  vertical-align: middle;
+  width: 40px;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+}
+
+.user-container p {
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(212, 43, 201);
+}
+
+.user-input-container {
+  display: flex;
+  gap: 10px;
+}
+
+#user-input {
+  width: 50%;
+  padding: 0.4rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 19px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#searchbtn {
+  padding: 0.4 rem;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(189, 192, 192, 0.285);
+}
+
+#searchbtn:hover {
+  transform: scale(1.1);
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid rgb(19, 190, 19);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: rgb(158, 38, 205);
+  font-weight: 700;
+  background: conic-gradient(
+    rgb(91, 237, 91) var(--progress-degree, 0%),
+    #f7f9f9 0%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+.circle span {
+  position: relative;
+  z-index: 2;
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stats-card {
+  display: flex;
+  gap: 5px;
+}
+
+.card {
+  margin-top: 1rem;
+  padding: 1rem;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #dde8af43;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p {
+  font-size: large;
+  font-weight: 800;
+  color: rgb(16, 160, 182);
+}
+
+.card:hover,
+.circle:hover {
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
