@@ -3,7 +3,6 @@
 A mini project to track and visualize your **LeetCode** progress using **HTML, CSS, and JavaScript**.
 
 
-
 ## 🚀 Features
 
 - 🔍 **Search** LeetCode user by username
