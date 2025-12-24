@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+.sidebar {
+  background-color: black;
+  width: 340px;
+  border-radius: 1rem; /* 1 rem = 16px */
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.hero {
+  background-color: #121212;
+  border-radius: 1rem; /* 1 rem = 16px */
+  flex: 1;
+  overflow: auto;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.player {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-option {
+  line-height: 2.5rem;
+  font-size: 1rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover {
+  opacity: 1;
+}
+
+.nav-option i {
+  font-size: 1.25rem;
+}
+
+.nav-option a {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.library {
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lib-option img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.icons {
+  font-size: 1.25rem;
+  display: flex;
+}
+
+.icons i {
+  opacity: 0.7;
+  margin-right: 1rem;
+}
+
+.icons i:hover {
+  opacity: 1;
+}
+
+.box {
+  height: 8rem;
+  background-color: #232323;
+  border-radius: 0.75rem;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.75rem 1rem;
+}
+
+.box-p1 {
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: inherit;
+}
+
+.box-p2 {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  background-color: inherit;
+}
+
+.badge {
+  background-color: #fff;
+  border: none;
+  color: black;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  height: 2rem;
+  width: fit-content;
+}
+
+.box p {
+  padding: 0.25rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Styling for Main Content */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0 0.25rem 0;
+  z-index: 1;
+}
+
+.sticky-nav-icons {
+  margin-left: 0.75rem;
+}
+
+.sticky-nav-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sticky-nav-options button {
+  margin-left: 0.5rem;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.dark-badge {
+  background-color: #050505;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+}
+
+.card {
+  background-color: rgba(53, 52, 52, 0.634);
+  width: 150px;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 1.5rem;
+  position: relative;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  border-radius: 0.3rem;
+  width: 100%;
+}
+
+.card-title {
+  font-weight: 600;
+  background-color: inherit;
+}
+
+.card-info {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  background-color: inherit;
+}
+
+.hero h2 {
+  padding: 0.6rem;
+}
+
+.footer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 90%;
+  height: 30%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+
+.circle {
+  border: 1px solid black;
+  background-color: lime;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 6.9rem;
+  opacity: 0;
+}
+
+.circle i {
+  background-color: lime;
+  position: absolute;
+  left: 9px;
+  top: 10px;
+}
+
+.card:hover {
+  .circle {
+    transition-timing-function: ease-in;
+    transition-duration: 0.4s;
+    opacity: 1;
+  }
+}
+
+.fplay {
+  width: 30%;
+  display: flex;
+  margin: 0 1rem;
+}
+
+.fplay img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.mname {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  padding: 1rem;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.mname h4 {
+  font-weight: 500;
+}
+
+.mname h6 {
+  font-weight: 400;
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.fplay i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0.25rem 0.25rem;
+}
+
+.mbar {
+  /* width: 40%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 3.6rem;
+  cursor: pointer;
+}
+
+.mcontrols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4rem 0;
+}
+
+.mcontrols img {
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+}
+
+.mcontrols img:nth-child(3) {
+  height: 2rem;
+  width: 2rem;
+}
+
+.mcontrols img:hover {
+  opacity: 0.7;
+}
+
+.mline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mline input {
+  width: 100%;
+  height: 0.4rem;
+}
+
+.mline p {
+  height: 0.3rem;
+  padding: 0 1rem 1rem;
+}
+
+.lcontrols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.lcontrols input {
+  width: 5rem;
+}
+
+#mstat {
+  accent-color: white;
+}
+
+/* #mstat::-webkit-slider-thumb {
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background: #4CAF50;
+  border-radius: 50%; 
+  margin-top: -6px;
+} */
+
+/* Media Queries */
+@media screen and (min-width:340px) and (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+
+  .fplay {
+    display: none;
+  }
+
+  .mname,
+  .fplay i {
+    display: none;
+  }
+
+  .card {
+    width: 75px;
+    padding: 0.5rem;
+    margin: 0.2rem;
+  }
+
+  .card-info {
+    display: none;
+  }
+  .circle {
+    display: none;
+  }
+
+  .mline input {
+    width: 50%;
+  }
+
+  .player {
+    justify-content: space-evenly;
+  }
+
+  .lcontrols {
+    display: none;
+  }
+}
+
+@media {
+
+}
+
+/* @media (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+
+  .mname,
+  .fplay i {
+    display: none;
+  }
+
+  .fplay {
+    width: 10%;
+  }
+
+  .player {
+    justify-content: space-evenly;
+  }
+
+  .lcontrols {
+    display: none;
+  }
+} */

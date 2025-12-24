@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./../assets/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- Sidebar Section -->
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="./../assets/library_icon.png" alt="" />
+              <a href="#">Your library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy, we'll help you</p>
+              <button class="badge">Create Playlist</button>
+            </div>
+
+            <div class="box">
+              <p class="box-p1">Let's find some podcast to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="sticky-nav">
+          <div class="nav-icons">
+            <img src="./../assets/backward_icon.png" alt="" />
+            <img src="./../assets/forward_icon.png" alt="" class="hide" />
+          </div>
+          <div class="sticky-nav-options">
+            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item dark-badge">
+              <i class="fa-regular fa-circle-down"></i>Install App
+            </button>
+            <i class="fa-regular fa-user nav-item"></i>
+          </div>
+        </div>
+
+        <h2>Recently Played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./../assets/card1img.jpeg" alt="" class="card-img" />
+            <h3 class="card-title">Top 50 - Global</h3>
+            <h4 class="card-info">Your daily updates of the most played ...</h4>
+             <div class="circle">
+               <i class="fa-solid fa-play"></i>
+           </div>
+          </div>
+        </div>
+
+        <h2>Trending now near you</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./../assets/card2img.jpeg" alt="" class="card-img" />
+            <h3 class="card-title">Top 50 - Global</h3>
+            <h4 class="card-info">Your daily updates of the most played ...</h4>
+             <div class="circle">
+               <i class="fa-solid fa-play"></i>
+           </div>
+          </div>
+
+          <div class="card">
+            <img src="./../assets/card3img.jpeg" alt="" class="card-img" />
+            <h3 class="card-title">Top 50 - Global</h3>
+            <h4 class="card-info">Your daily updates of the most played ...</h4>
+             <div class="circle">
+               <i class="fa-solid fa-play"></i>
+           </div>
+          </div>
+
+          <div class="card">
+            <img src="./../assets/card4img.jpeg" alt="" class="card-img" />
+            <h3 class="card-title">Top 50 - Global</h3>
+            <h4 class="card-info">Your daily updates of the most played ...</h4>
+             <div class="circle">
+               <i class="fa-solid fa-play"></i>
+           </div>
+          </div>
+
+          <div class="card">
+            <img src="./../assets/card5img.jpeg" alt="" class="card-img" />
+            <h3 class="card-title">Top 50 - Global</h3>
+            <h4 class="card-info">Your daily updates of the most played ...</h4>
+             <div class="circle">
+               <i class="fa-solid fa-play"></i>
+           </div>
+          </div>
+
+          <div class="card">
+            <img src="./../assets/card3img.jpeg" alt="" class="card-img" />
+            <h3 class="card-title">Top 50 - Global</h3>
+            <h4 class="card-info">Your daily updates of the most played ...</h4>
+             <div class="circle">
+               <i class="fa-solid fa-play"></i>
+           </div>
+          </div>
+
+          <div class="card">
+            <img src="./../assets/card2img.jpeg" alt="" class="card-img" />
+            <h3 class="card-title">Top 50 - Global</h3>
+            <h4 class="card-info">Your daily updates of the most played ...</h4>
+             <div class="circle">
+               <i class="fa-solid fa-play"></i>
+           </div>
+          </div>
+
+        </div>
+
+        <h2>Featured Charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./../assets/card5img.jpeg" alt="" class="card-img" />
+            <h3 class="card-title">Top 50 - Global</h3>
+            <h4 class="card-info">Your daily updates of the most played ...</h4>
+             <div class="circle">
+               <i class="fa-solid fa-play"></i>
+           </div>
+          </div>
+
+          <div class="card">
+            <img src="./../assets/card6img.jpeg" alt="" class="card-img" />
+            <h3 class="card-title">Top Song-India</h3>
+            <h4 class="card-info">Your daily updates of the most played ...</h4>
+             <div class="circle">
+               <i class="fa-solid fa-play"></i>
+           </div>
+          </div>
+
+          <div class="card">
+            <img src="./../assets/card1img.jpeg" alt="" class="card-img" />
+            <h3 class="card-title">Top 50 - Global</h3>
+            <h4 class="card-info">Your daily updates of the most played ...</h4>
+             <div class="circle">
+               <i class="fa-solid fa-play"></i>
+           </div>
+          </div>
+          </div>
+          <div class="footer">
+            <div class="line"></div>
+          </div>
+      </div>
+      <!-- Player Section -->
+      <div class="player">
+          <div class="fplay">
+            <img src="./../assets/card2img.jpeg" alt="">
+            <div class="mname">
+              <h4>Daylight</h4>
+              <h6>David Kushner</h6>
+            </div>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-compress"></i>
+          </div>
+
+
+          <div class="mbar">
+            <div class="mcontrols">
+              <img src="./../assets/player_icon1.png" alt="">
+              <img src="./../assets/player_icon2.png" alt="">
+              <img src="./../assets/player_icon3.png" alt="">
+              <img src="./../assets/player_icon4.png" alt="">
+              <img src="./../assets/player_icon5.png" alt="">
+            </div>
+            <div class="mline">
+                <p>1:55</p>
+                  <input type="range" name="" id="mstat">
+                <p>3:33</p>  
+            </div>
+          </div>
+
+          <div class="lcontrols">
+            <i class="fa-solid fa-headset"></i>
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-headset"></i>
+            <label for=""><i class="fa-solid fa-volume-high"></i></label>
+            <input type="range" name="" id="">
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
